@@ -10,7 +10,7 @@ export default function Post({ post }) {
 
         <div className="flex items-center justify-between">
             {/* post user info */}
-            <div className="flex items-center space-x-1 whitespace-nowrap p-2">
+            <div className="flex items-center space-x-1 whitespace-nowrap">
                 <h4 className="font-bold text-[15px] sm:text-[16px] hover:underline">{post.name}</h4>
                 <span className="text-sm sm:text-[15px]">@{post.username}</span>
                 <p className="p-2">-</p>
@@ -22,12 +22,12 @@ export default function Post({ post }) {
         </div>
 
         {/* post text */}
-        <p className="text-gray-800 text-[15px sm:text-[16px] mb-2 p-2">{post.text}</p>
+        <p className="text-gray-800 text-[15px sm:text-[16px] mb-2">{post.text}</p>
 
 
         {/* post image */}
 
-        <img className="rounded-2xl p-2 mr-2" src={post.img} alt />
+        <img className="rounded-2xl mr-2" src={post.img} alt />
 
         {/* icons */}
         <div className="flex justify-between text-gray-500 p-2">
