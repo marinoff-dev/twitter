@@ -14,14 +14,14 @@ export default function Widgets({newsResults, randomUsersResults}) {
             </div>
         </div>
 
-        <div className="text-gray-700 space-y-4 bg-gray-100 rounded-lg py-3 w-[90%] xl:w-[35%]">
+        <div className="text-gray-700 space-y-4 bg-gray-100 rounded-lg py-3 w-[90%] xl:w-[75%]">
           <h4 className="font-bold text px-4">What's happening ?</h4>
           {newsResults.slice(0,articleNum).map((article)=>(
             <News key={article.title} article={article}/>
           ))}
           <button onClick={()=>setArticleNum(articleNum + 3)} className="p-3 text-blue-300 pb-3 hover:text-blue-400">Show more</button>
         </div>
-        <div className="sticky top-16 text-gray-700 space-y-3 bg-gray-100 pt-2 mr-2 rounded-lg w-[90%] lg:w-[35%]">
+        <div className="sticky top-16 text-gray-700 space-y-3 bg-gray-100 pt-2 mr-2 rounded-lg w-[90%] lg:w-[75%]">
             <h4 className="font-bold text-lg px-4">Who to follow</h4>
             {randomUsersResults.slice(0,randomUserNum).map((randomUser)=>(
               <div key={randomUser.login.username} className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200">
