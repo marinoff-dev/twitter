@@ -25,7 +25,7 @@ export default function Widgets({newsResults, randomUsersResults}) {
             <h4 className="font-bold text-lg px-4">Who to follow</h4>
             {randomUsersResults.slice(0,randomUserNum).map((randomUser)=>(
               <div key={randomUser.login.username} className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200">
-                  <img className="rounded-full mr-2" src={randomUser.picture.thumbnail} />
+                  <img className="rounded-full mr-2" src={randomUser.picture.thumbnail} alt="random-img" />
                   <div className="truncate ml-4 leading-5">
                     <h4 className="font-bold hover:underline text-[14px] truncate">{randomUser.login.username}</h4>
                     <h5 className="text-[13px] text-gray-500 truncate">{randomUser.name.first + " " + randomUser.name.last}</h5>
